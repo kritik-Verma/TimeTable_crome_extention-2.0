@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "timeTable-2.0",
+  "description": "",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_popup": "index.html"
+  },
+  "permissions": []
+}

@@ -1,0 +1,149 @@
+:root {
+  --night: #00182e;
+  --day: #d0e8ffc5;
+  --day1: #d0e8ff;
+  --goingOn: #f8c178c5;
+  --done: #c4c4c4c5;
+  --events: #52f15aaf;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  color: black;
+}
+h1 {
+  font-weight: 500;
+}
+body {
+  /* filter: blur(8px); */
+  /* background-color: var(--night); */
+  background-image: linear-gradient(
+    to top,
+    #260a1a,
+    #290b22,
+    #290d2b,
+    #271035,
+    #201540,
+    #1a1e49,
+    #112652,
+    #002e5a,
+    #003a5f,
+    #00455e,
+    #004e58,
+    #005651
+  );
+  width: 400px;
+}
+.heading > h1,
+.heading > a > h1 {
+  background: linear-gradient(to left top, #e4f2ff 50%, #cae6ff 50%);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 20px auto 20px auto;
+  width: fit-content;
+  padding: 10px 17px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.heading .percent {
+  font-size: 1.5rem !important;
+  color: rgba(173, 2, 2, 0.7);
+  font-weight: bold;
+}
+.heading .text {
+  font-size: 1rem;
+}
+
+.timetable__items {
+  /* background: linear-gradient(to left top, #c3f8df 50%, #8ef093ea 50%); */
+  /* background-color: var(--day); */
+  background-image: linear-gradient(
+    to right top,
+    #539c8baf,
+    #5cb4a5af,
+    #66cdc0af,
+    #6ee6ddaf,
+    #77fffbaf
+  );
+  margin: 18px;
+  padding: 12px 20px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: transform 500ms;
+}
+.timetable__items:hover {
+  transform: scale(1.05);
+}
+.onGoing {
+  /* background-color: var(--goingOn); */
+  background-image: linear-gradient(
+    to right top,
+    #87539caf,
+    #9d5cb4af,
+    #b165cdaf,
+    #c76ee6af,
+    #dd77ffaf
+  );
+}
+.done {
+  /* background-color: var(--done); */
+
+  background-image: linear-gradient(
+    to right top,
+    #9ba4b1af,
+    #aeb2bdaf,
+    #bfc1c8af,
+    #d0d0d4af,
+    #e0e0e0af
+  );
+}
+.events {
+  background-color: var(--events);
+}
+.ongoingEvents {
+  background-color: #cbe766bd;
+}
+.timetable__items__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+}
+.classlink {
+  margin-top: 4px;
+  font-weight: lighter;
+  color: rgba(34, 33, 33, 0.726);
+}
+.week {
+  color: rgba(0, 0, 0, 0.5);
+}
+.mainTime {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.35);
+  margin-top: 4px;
+  padding-top: 4px;
+}
+.mainTime > .hr,
+.mainTime > .min,
+.mainTime > .sec,
+.mainTime > .am {
+  color: rgba(173, 2, 2, 0.7) !important;
+  font-weight: bold;
+}
